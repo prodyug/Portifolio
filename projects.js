@@ -10,16 +10,22 @@ const projects = [
     technologies: ['HTML', 'CSS', 'JavaScript'],
     url: 'https://prodyug.github.io/agbarber/',
     github: 'https://github.com/prodyug/agbarber',
-    image: '', accent: '#294c35'
+    image: 'images/navalha-barber-club/dashboard.png', accent: '#294c35'
   },
   {
-    title: 'Projeto 02', type: 'Aplicação web', year: '2026',
-    description: 'Conte o que a aplicação faz e para quem ela foi construída.',
-    technologies: ['React', 'Node.js', 'API'], url: '', github: '', image: '', accent: '#213c55'
+    title: 'Vértice', type: 'E-commerce conceitual', year: '2026',
+    description: 'Loja digital com catálogo, busca, filtros, carrinho, checkout simulado e painel de inventário.',
+    technologies: ['HTML', 'CSS', 'JavaScript', 'localStorage'],
+    url: 'https://prodyug.github.io/LojaV/',
+    github: 'https://github.com/prodyug/LojaV',
+    image: 'images/Loja Virtual/Captura de tela 2026-08-01 161154.png', accent: '#384963'
   },
   {
-    title: 'Projeto 03', type: 'E-commerce', year: '2026',
-    description: 'Descreva a experiência, solução ou resultado que você criou.',
-    technologies: ['UI/UX', 'Responsivo', 'Performance'], url: '', github: '', image: '', accent: '#f27659'
+    title: 'ClienteFlow', type: 'SaaS de gestão', year: '2026',
+    description: 'Dashboard para acompanhar clientes, projetos e pagamentos com autenticação e dados persistentes.',
+    technologies: ['React', 'Vite', 'Supabase'],
+    url: 'https://prodyug.github.io/mini-saas/',
+    github: 'https://github.com/prodyug/mini-saas',
+    image: 'images/Mini SaaS/Captura de tela 2026-08-01 161522.png', accent: '#773f7d'
   }
 ];
