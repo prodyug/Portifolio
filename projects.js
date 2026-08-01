@@ -5,9 +5,12 @@
 */
 const projects = [
   {
-    title: 'Projeto 01', type: 'Site institucional', year: '2026',
-    description: 'Uma breve frase que explica o problema resolvido e o impacto do projeto.',
-    technologies: ['HTML', 'CSS', 'JavaScript'], url: '', github: '', image: '', accent: '#efb95e'
+    title: 'Navalha Barber Club', type: 'Sistema de gestão', year: '2026',
+    description: 'Plataforma para organizar agenda, clientes, serviços e equipe de uma barbearia em um só lugar.',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    url: 'https://prodyug.github.io/agbarber/',
+    github: 'https://github.com/prodyug/agbarber',
+    image: '', accent: '#294c35'
   },
   {
     title: 'Projeto 02', type: 'Aplicação web', year: '2026',
