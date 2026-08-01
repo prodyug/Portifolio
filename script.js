@@ -18,9 +18,13 @@ function createProject(project, index) {
     link.rel = 'noreferrer';
   }
 
-  if (project.image) {
-    link.style.backgroundImage = `url("${project.image}")`;
-  }
+  const images = project.images || [project.image].filter(Boolean);
+  images.forEach((image, imageIndex) => {
+    const media = document.createElement('span');
+    media.className = `project-media${imageIndex === 0 ? ' is-active' : ''}`;
+    media.style.backgroundImage = `url("${image}")`;
+    link.append(media);
+  });
 
   const content = document.createElement('div');
   content.className = 'project-content';
@@ -51,6 +55,17 @@ function createProject(project, index) {
 }
 
 projects.forEach((project, index) => projectGrid.append(createProject(project, index)));
+
+document.querySelectorAll('.project').forEach((project, index) => {
+  const slides = project.querySelectorAll('.project-media');
+  if (slides.length < 2) return;
+  let activeSlide = 0;
+  window.setInterval(() => {
+    slides[activeSlide].classList.remove('is-active');
+    activeSlide = (activeSlide + 1) % slides.length;
+    slides[activeSlide].classList.add('is-active');
+  }, 3600 + index * 250);
+});
 
 toggle.addEventListener('click', () => {
   const open = nav.classList.toggle('open');

@@ -10,7 +10,9 @@ const projects = [
     technologies: ['HTML', 'CSS', 'JavaScript'],
     url: 'https://prodyug.github.io/agbarber/',
     github: 'https://github.com/prodyug/agbarber',
-    image: 'images/navalha-barber-club/dashboard.png', accent: '#294c35'
+    image: 'images/navalha-barber-club/dashboard.png',
+    images: ['images/navalha-barber-club/dashboard.png', 'images/navalha-barber-club/agenda.png', 'images/navalha-barber-club/clientes.png', 'images/navalha-barber-club/servicos.png', 'images/navalha-barber-club/configuracoes.png', 'images/navalha-barber-club/login.png'],
+    accent: '#294c35'
   },
   {
     title: 'Vértice', type: 'E-commerce conceitual', year: '2026',
@@ -18,7 +20,9 @@ const projects = [
     technologies: ['HTML', 'CSS', 'JavaScript', 'localStorage'],
     url: 'https://prodyug.github.io/LojaV/',
     github: 'https://github.com/prodyug/LojaV',
-    image: 'images/Loja Virtual/Captura de tela 2026-08-01 161154.png', accent: '#384963'
+    image: 'images/Loja Virtual/Captura de tela 2026-08-01 161154.png',
+    images: ['images/Loja Virtual/Captura de tela 2026-08-01 161154.png', 'images/Loja Virtual/Captura de tela 2026-08-01 161208.png', 'images/Loja Virtual/Captura de tela 2026-08-01 161237.png', 'images/Loja Virtual/Captura de tela 2026-08-01 161315.png', 'images/Loja Virtual/Captura de tela 2026-08-01 161340.png'],
+    accent: '#384963'
   },
   {
     title: 'ClienteFlow', type: 'SaaS de gestão', year: '2026',
@@ -26,7 +30,9 @@ const projects = [
     technologies: ['React', 'Vite', 'Supabase'],
     url: 'https://prodyug.github.io/mini-saas/',
     github: 'https://github.com/prodyug/mini-saas',
-    image: 'images/Mini SaaS/Captura de tela 2026-08-01 161522.png', accent: '#773f7d'
+    image: 'images/Mini SaaS/Captura de tela 2026-08-01 161522.png',
+    images: ['images/Mini SaaS/Captura de tela 2026-08-01 161522.png', 'images/Mini SaaS/Captura de tela 2026-08-01 161535.png', 'images/Mini SaaS/Captura de tela 2026-08-01 161545.png', 'images/Mini SaaS/Captura de tela 2026-08-01 161551.png', 'images/Mini SaaS/Captura de tela 2026-08-01 161556.png', 'images/Mini SaaS/Captura de tela 2026-08-01 161602.png', 'images/Mini SaaS/Captura de tela 2026-08-01 161611.png', 'images/Mini SaaS/Captura de tela 2026-08-01 161616.png'],
+    accent: '#773f7d'
   },
   {
     title: 'Agente de Estudos IA', type: 'Plataforma educacional', year: '2026',
@@ -34,6 +40,8 @@ const projects = [
     technologies: ['JavaScript', 'IA', 'Estudo guiado'],
     url: 'https://agente-gcm-ia-uxe6.vercel.app/',
     github: '',
-    image: 'images/AgenteEstudos/Captura de tela 2026-08-01 165004.png', accent: '#182019'
+    image: 'images/AgenteEstudos/Captura de tela 2026-08-01 165004.png',
+    images: ['images/AgenteEstudos/Captura de tela 2026-08-01 165004.png', 'images/AgenteEstudos/Captura de tela 2026-08-01 164955.png'],
+    accent: '#182019'
   }
 ];

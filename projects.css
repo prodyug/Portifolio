@@ -1,1 +1,2 @@
 .project-content > div:first-child{display:flex;justify-content:space-between;align-items:flex-start}
+.project-media{position:absolute;inset:0;z-index:0;background-size:cover;background-position:center;opacity:0;transform:scale(1.03);transition:opacity .8s ease,transform 5s ease}.project-media.is-active{opacity:1;transform:scale(1)}@media(prefers-reduced-motion:reduce){.project-media{transition:none}}
