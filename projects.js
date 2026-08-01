@@ -29,11 +29,11 @@ const projects = [
     image: 'images/Mini SaaS/Captura de tela 2026-08-01 161522.png', accent: '#773f7d'
   },
   {
-    title: 'Lofi Slide Puzzle', type: 'Jogo interativo', year: '2026',
-    description: 'Puzzle deslizante com estética lofi, modos normal e difícil, trilha sonora e ranking de jogadores.',
-    technologies: ['HTML', 'CSS', 'JavaScript'],
-    url: 'https://lofi-pluze-prodyug.netlify.app/',
+    title: 'Agente de Estudos IA', type: 'Plataforma educacional', year: '2026',
+    description: 'Agente de preparação para concursos com questões, flashcards, planos de estudo e correções adaptadas ao perfil do aluno.',
+    technologies: ['JavaScript', 'IA', 'Estudo guiado'],
+    url: 'https://agente-gcm-ia-uxe6.vercel.app/',
     github: '',
-    image: 'images/LofiPluze/Captura de tela 2026-08-01 162512.png', accent: '#101426'
+    image: 'images/AgenteEstudos/Captura de tela 2026-08-01 165004.png', accent: '#182019'
   }
 ];
