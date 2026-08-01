@@ -27,5 +27,13 @@ const projects = [
     url: 'https://prodyug.github.io/mini-saas/',
     github: 'https://github.com/prodyug/mini-saas',
     image: 'images/Mini SaaS/Captura de tela 2026-08-01 161522.png', accent: '#773f7d'
+  },
+  {
+    title: 'Lofi Slide Puzzle', type: 'Jogo interativo', year: '2026',
+    description: 'Puzzle deslizante com estética lofi, modos normal e difícil, trilha sonora e ranking de jogadores.',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    url: 'https://lofi-pluze-prodyug.netlify.app/',
+    github: '',
+    image: 'images/LofiPluze/Captura de tela 2026-08-01 162512.png', accent: '#101426'
   }
 ];
