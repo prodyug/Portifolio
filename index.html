@@ -3,79 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfólio de desenvolvimento web e produtos digitais.">
-  <title>Hugo.dev | Produtos digitais que movem negócios</title>
+  <meta name="description" content="Portfólio de Hugo, desenvolvedor de experiências digitais.">
+  <title>Hugo Santos | Digital experiences</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="projects.css">
 </head>
 <body>
-  <div class="noise"></div>
+  <div class="grain"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
   <header class="header">
-    <a class="brand" href="#inicio" aria-label="Ir para início">hugo<span>.</span>dev</a>
+    <a class="brand" href="#inicio" aria-label="Ir para o início"><span>HS</span> Hugo Santos</a>
+    <p class="header-location">BRASIL <i></i> DISPONÍVEL PARA FREELANCE</p>
     <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
     <nav class="nav" aria-label="Navegação principal">
       <a href="#projetos">Projetos</a>
-      <a href="#sobre">Sobre</a>
-      <a href="#processo">Processo</a>
-      <a class="nav-cta" href="#contato">Vamos conversar <b>↗</b></a>
+      <a href="#sobre">Perfil</a>
+      <a href="#contato">Contato <b>↗</b></a>
     </nav>
   </header>
 
   <main id="inicio">
     <section class="hero">
-      <div class="hero-copy reveal">
-        <p class="eyebrow"><i></i> Disponível para novos projetos</p>
-        <h1>Transformo boas ideias em <em>experiências</em> que as pessoas querem usar.</h1>
-        <p class="hero-description">Desenvolvo sites e produtos digitais com estratégia, estética e tecnologia. Para marcas que não querem passar despercebidas.</p>
-        <div class="hero-actions">
-          <a href="#contato" class="button button-dark">Tirar um projeto do papel <span>↗</span></a>
-          <a href="#projetos" class="text-link">Ver trabalhos selecionados <span>↓</span></a>
-        </div>
+      <div class="hero-top reveal"><span>(01 - 04)</span><span>WEB DESIGN / FRONT-END / PRODUTO</span></div>
+      <div class="hero-title reveal">
+        <h1>Eu crio<br><em>experiências</em><br>para a web.</h1>
+        <p>Sites e produtos digitais que parecem vivos, funcionam com clareza e dão uma identidade forte para quem está por trás.</p>
       </div>
-      <div class="hero-art reveal">
-        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
-        <div class="hero-stamp"><span>DESIGN + CODE</span><strong>2025</strong></div>
-        <div class="hero-window">
-          <div class="window-top"><span></span><span></span><span></span><small>new project</small></div>
-          <div class="window-content"><p>Olá, mundo.</p><div class="code-line l1"></div><div class="code-line l2"></div><div class="code-line l3"></div><div class="code-line l4"></div><b>_</b></div>
-        </div>
-        <div class="spark spark-one">✦</div><div class="spark spark-two">✦</div>
-      </div>
+      <div class="hero-bottom reveal"><a href="#projetos" class="round-link" aria-label="Ver projetos"><span>↓</span></a><p>Role para descobrir<br>o meu universo digital</p><div class="hero-mark">H<br>S</div></div>
     </section>
 
-    <section class="trusted reveal">
-      <p>Foco em criar presença digital para</p>
-      <div class="trusted-list"><span>Startups</span><span>Negócios locais</span><span>Marcas autorais</span><span>Empresas em evolução</span></div>
+    <section class="statement" id="sobre">
+      <p class="section-label reveal">// MANIFESTO</p>
+      <h2 class="reveal">Bom design não pede atenção.<br>Ele torna <em>impossível</em> olhar para outro lado.</h2>
+      <div class="statement-note reveal"><span>01</span><p>Meu foco é transformar ideias em interfaces que carregam personalidade, propósito e precisão técnica.</p></div>
     </section>
 
-    <section class="projects" id="projetos">
-      <div class="section-head reveal"><p class="eyebrow">01 / Projetos selecionados</p><h2>Trabalho que fala <em>por si.</em></h2><p>Uma seleção de experiências pensadas para gerar conexão e resultado.</p></div>
+    <section class="work" id="projetos">
+      <div class="work-heading reveal"><p class="section-label">// TRABALHOS SELECIONADOS</p><h2>Projetos que<br><em>ganharam vida.</em></h2><p>Uma coleção de produtos digitais pensados de ponta a ponta.</p></div>
       <div class="project-grid" id="project-grid" aria-live="polite"></div>
-      <a href="#contato" class="all-projects text-link reveal">Tem algo parecido em mente? Vamos criar. <span>↗</span></a>
     </section>
 
-    <section class="about" id="sobre">
-      <div class="about-number reveal">02</div>
-      <div class="about-content reveal"><p class="eyebrow">Sobre o meu trabalho</p><h2>Não é só sobre ter um site bonito. É sobre ter um lugar que faça sua marca <em>crescer.</em></h2><p class="about-text">Cada projeto começa entendendo o que torna o seu negócio único. A partir daí, uno design intencional e desenvolvimento cuidadoso para criar uma presença digital memorável, rápida e fácil de usar.</p><div class="skills"><span>Web design</span><span>Desenvolvimento front-end</span><span>UI/UX</span><span>E-commerce</span><span>Brand experience</span></div></div>
-    </section>
-
-    <section class="process" id="processo">
-      <div class="section-head reveal"><p class="eyebrow">03 / Como funciona</p><h2>Clareza em cada <em>etapa.</em></h2></div>
-      <div class="steps reveal"><article><span>01</span><h3>Imersão</h3><p>Entendo o negócio, público e objetivos para construir o caminho certo.</p></article><article><span>02</span><h3>Direção</h3><p>Transformo estratégia em uma interface que traduz sua essência.</p></article><article><span>03</span><h3>Construção</h3><p>Desenvolvo uma experiência fluida, responsiva e feita para durar.</p></article><article><span>04</span><h3>Lançamento</h3><p>Colocamos o projeto no mundo e acompanhamos os primeiros passos.</p></article></div>
+    <section class="capabilities">
+      <div class="capability-intro reveal"><p class="section-label">// O QUE EU FAÇO</p><h2>Estratégia,<br>estética e <em>código.</em></h2></div>
+      <div class="capability-list reveal">
+        <article><span>01</span><h3>Interfaces</h3><p>Design de sites e produtos que organizam informação e criam desejo.</p></article>
+        <article><span>02</span><h3>Front-end</h3><p>Experiências responsivas, rápidas e construídas com atenção ao detalhe.</p></article>
+        <article><span>03</span><h3>Produtos</h3><p>Dashboards, plataformas e ferramentas para resolver problemas reais.</p></article>
+      </div>
     </section>
 
     <section class="contact" id="contato">
-      <div class="contact-star">✦</div>
-      <p class="eyebrow">Tem um desafio interessante?</p>
-      <h2>Vamos criar algo<br><em>inconfundível.</em></h2>
-      <a class="contact-email" href="mailto:ola@hugodev.com">ola@hugodev.com <span>↗</span></a>
-      <p class="contact-note">Respondo em até 2 dias úteis.</p>
+      <p class="section-label reveal">// PRÓXIMO CAPÍTULO</p>
+      <h2 class="reveal">Tem uma boa ideia?<br><em>Vamos dar forma a ela.</em></h2>
+      <a class="email-link reveal" href="mailto:ola@hugosantos.dev">ola@hugosantos.dev <span>↗</span></a>
+      <p class="contact-caption reveal">Aceitando projetos selecionados para 2026.</p>
     </section>
   </main>
-  <footer><a class="brand" href="#inicio">hugo<span>.</span>dev</a><p>© 2025. Feito com intenção.</p><div><a href="#">LinkedIn</a><a href="#">Instagram</a><a href="#">GitHub</a></div></footer>
+
+  <footer><a class="brand" href="#inicio"><span>HS</span> Hugo Santos</a><p>© 2026 / TODOS OS DIREITOS RESERVADOS</p><a href="https://github.com/prodyug" target="_blank" rel="noreferrer">GITHUB ↗</a></footer>
   <script src="projects.js"></script>
   <script src="script.js"></script>
 </body>

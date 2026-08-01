@@ -1,40 +1,52 @@
 const toggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.nav');
 const projectGrid = document.querySelector('#project-grid');
+const glow = document.querySelector('.cursor-glow');
 
 function createProject(project, index) {
   const article = document.createElement('article');
-  article.className = `project reveal${index === 0 ? ' project-large' : ''}`;
+  article.className = 'project reveal';
+
   const link = document.createElement('a');
-  link.className = 'project-image project-template';
+  link.className = 'project-image';
   link.href = project.url || project.github || '#contato';
-  link.setAttribute('aria-label', `Ver ${project.title}`);
-  if (project.url || project.github) { link.target = '_blank'; link.rel = 'noreferrer'; }
-  if (project.image) { link.style.backgroundImage = `linear-gradient(rgba(23,32,32,.08),rgba(23,32,32,.08)),url("${project.image}")`; link.classList.add('has-image'); }
-  else link.style.setProperty('--project-accent', project.accent);
+  link.setAttribute('aria-label', `Abrir ${project.title}`);
+  link.style.backgroundColor = project.accent;
 
-  const indexLabel = document.createElement('span');
-  indexLabel.className = 'project-index';
-  indexLabel.textContent = `0${index + 1} / SEU PROJETO`;
-  const visual = document.createElement('div');
-  visual.className = 'template-visual';
-  const visualTitle = document.createElement('strong');
-  visualTitle.textContent = project.title;
-  const description = document.createElement('p');
-  description.textContent = project.description;
-  visual.append(visualTitle, description);
-  const view = document.createElement('span');
-  view.className = 'view-project';
-  view.textContent = project.url || project.github ? 'Ver projeto ↗' : 'Adicionar link ↗';
-  link.append(indexLabel, visual, view);
+  if (project.url || project.github) {
+    link.target = '_blank';
+    link.rel = 'noreferrer';
+  }
 
-  const meta = document.createElement('div');
-  meta.className = 'project-meta';
+  if (project.image) {
+    link.style.backgroundImage = `url("${project.image}")`;
+  }
+
+  const content = document.createElement('div');
+  content.className = 'project-content';
+  const top = document.createElement('div');
+  const number = document.createElement('span');
+  number.className = 'project-number';
+  number.textContent = `0${index + 1} / 04`;
+  const type = document.createElement('span');
+  type.className = 'project-type';
+  type.textContent = project.type;
+  top.append(number, type);
+
+  const info = document.createElement('div');
+  info.className = 'project-info';
   const text = document.createElement('div');
-  const title = document.createElement('h3'); title.textContent = project.title;
-  const stack = document.createElement('p'); stack.textContent = `${project.type} · ${project.technologies.join(' · ')}`;
-  const year = document.createElement('span'); year.textContent = project.year;
-  text.append(title, stack); meta.append(text, year); article.append(link, meta);
+  const title = document.createElement('h3');
+  title.className = 'project-title';
+  title.textContent = project.title;
+  const description = document.createElement('p');
+  description.className = 'project-description';
+  description.textContent = project.description;
+  const open = document.createElement('span');
+  open.className = 'project-open';
+  open.textContent = '↗';
+  text.append(title, description); info.append(text, open);
+  content.append(top, info); link.append(content); article.append(link);
   return article;
 }
 
@@ -54,6 +66,11 @@ const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) entry.target.classList.add('visible');
   });
-}, { threshold: 0.12 });
+}, { threshold: 0.1 });
 
 document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
+
+window.addEventListener('pointermove', (event) => {
+  glow.style.left = `${event.clientX}px`;
+  glow.style.top = `${event.clientY}px`;
+});
