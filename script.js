@@ -28,6 +28,7 @@ function createProject(project, index) {
   const content = document.createElement('div');
   content.className = 'project-content';
   const top = document.createElement('div');
+  top.className = 'project-meta';
   const number = document.createElement('span');
   number.className = 'project-number';
   number.textContent = `0${index + 1} / 04`;
@@ -45,10 +46,13 @@ function createProject(project, index) {
   const description = document.createElement('p');
   description.className = 'project-description';
   description.textContent = project.description;
+  const stack = document.createElement('p');
+  stack.className = 'project-stack';
+  stack.textContent = project.technologies.join(' / ');
   const open = document.createElement('span');
   open.className = 'project-open';
   open.textContent = '↗';
-  text.append(title, description); info.append(text, open);
+  text.append(title, description, stack); info.append(text, open);
   content.append(top, info); link.append(content); article.append(link);
   return article;
 }
