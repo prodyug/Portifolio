@@ -1,7 +1,6 @@
 const toggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.nav');
 const projectGrid = document.querySelector('#project-grid');
-const glow = document.querySelector('.cursor-glow');
 
 function createProject(project, index) {
   const article = document.createElement('article');
@@ -84,8 +83,3 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.1 });
 
 document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
-
-window.addEventListener('pointermove', (event) => {
-  glow.style.left = `${event.clientX}px`;
-  glow.style.top = `${event.clientY}px`;
-});
