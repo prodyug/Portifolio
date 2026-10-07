@@ -3,66 +3,109 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfólio de Hugo, estudante de Informática e desenvolvedor web.">
+  <meta name="theme-color" content="#050505">
+  <meta name="description" content="Portfólio de Hugo, estudante de Informática e desenvolvedor web. Uma coleção de projetos, ideias e experimentos digitais.">
   <title>Hugo | Portfólio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="projects.css">
 </head>
 <body>
   <header class="header">
-    <a class="brand" href="#inicio">HUGO<span>.</span></a>
-    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
-    <nav class="nav" aria-label="Navegação principal">
+    <a class="brand" href="#inicio" aria-label="Hugo, voltar ao início"><span class="brand-mark"><span>H</span></span><span>hugo<span class="brand-dot">.</span></span></a>
+    <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav"><span></span><span></span></button>
+    <nav class="nav" id="main-nav" aria-label="Navegação principal">
       <a href="#sobre">Sobre</a>
       <a href="#projetos">Projetos</a>
+      <a href="#ferramentas">Ferramentas</a>
       <a href="#contato">Contato</a>
+      <a class="nav-cta" href="mailto:hugodevlopper@gmail.com">Vamos conversar <span>↗</span></a>
     </nav>
   </header>
 
   <main id="inicio">
     <section class="hero">
-      <p class="eyebrow reveal">PORTFÓLIO / 2026</p>
-      <div class="hero-heading reveal">
-        <h1>Olá, eu<br>sou <em>Hugo.</em></h1>
-        <div class="hero-intro"><p>Eu crio experiências digitais funcionais, claras e pensadas para pessoas.</p><div class="hero-card"><span>EM BUSCA DE</span><strong>Estágio em<br>tecnologia</strong><small>Disponível para aprender, colaborar e construir.</small></div></div>
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow status-line reveal"><span class="status-dot"></span> DISPONÍVEL PARA ESTÁGIO EM TI</p>
+          <h1 class="reveal">Olá, eu sou<br><span class="hero-name">Hugo<span class="accent-dot">.</span></span></h1>
+          <p class="hero-lead reveal">Transformo ideias em experiências digitais <span>úteis, bonitas e feitas para pessoas.</span></p>
+          <div class="hero-actions reveal">
+            <a class="button button-primary" href="#projetos">Explorar projetos <span>↓</span></a>
+            <a class="button button-quiet" href="mailto:hugodevlopper@gmail.com">Entrar em contato <span>↗</span></a>
+          </div>
+          <div class="hero-meta reveal"><span>ESTUDANTE DE INFORMÁTICA</span><span>CONSTRUINDO NA PRÁTICA <i>✳</i></span></div>
+        </div>
+
+        <div class="hero-art reveal" role="img" aria-label="Busto clássico de mármore em estilo de impressão monocromática">
+          <div class="statue-halo halo-outer"></div>
+          <div class="statue-halo halo-inner"></div>
+          <div class="statue-scene">
+            <img class="statue-image" src="images/greek-bust-print.jpg" alt="">
+          </div>
+          <div class="statue-label statue-label-top"><span>ΤΕΧΝΗ / 01</span><span>ESTUDO EM MÁRMORE</span></div>
+          <div class="statue-label statue-label-bottom"><span>IDEIA · FORMA · CÓDIGO</span><span>HUGO / 2026</span></div>
+          <span class="statue-spark spark-one"></span><span class="statue-spark spark-two"></span>
+        </div>
       </div>
-      <div class="hero-footer reveal"><span>HUGO / 21 ANOS</span><span>ESTUDANTE DE INFORMÁTICA</span><a href="#projetos">VER PROJETOS <b>↓</b></a></div>
+      <a class="scroll-cue" href="#sobre"><span>ROLE PARA DESCOBRIR</span><b>↓</b></a>
     </section>
 
-    <section class="about" id="sobre">
-      <div class="section-index reveal">01</div>
-      <div class="about-content reveal">
-        <p class="eyebrow">SOBRE MIM</p>
-        <h2>Aprendendo, construindo<br>e evoluindo <em>na prática.</em></h2>
-        <p class="lead">Sou Hugo, tenho 21 anos e curso Informática no Grau Técnico. Gosto de transformar ideias em projetos digitais e estou construindo minha experiência através de produtos reais.</p>
-        <div class="about-details"><p><b>Formação atual</b>Informática · Grau Técnico</p><p><b>Objetivo</b>Aberto a estágios em TI</p><p><b>Interesse</b>Desenvolvimento web e produtos digitais</p></div>
+    <div class="greek-divider" aria-hidden="true"><span>ΤΕΧΝΗ <i>✦</i> DESIGN <i>✦</i> CÓDIGO <i>✦</i> IDEIAS</span></div>
+
+    <section class="about section-shell" id="sobre">
+      <div class="section-kicker reveal"><span>01</span><span>SOBRE MIM</span></div>
+      <div class="about-layout">
+        <div class="about-heading reveal"><p class="eyebrow">APRENDER FAZENDO</p><h2>Curioso por natureza.<br><span>Construtor por escolha.</span></h2></div>
+        <div class="about-art reveal" aria-hidden="true"><span class="about-art-ring"></span><img src="images/greek-carving-print.jpg" alt=""><span class="about-art-caption">ARS / 01</span></div>
+        <div class="about-copy reveal"><p>Sou Hugo, tenho 21 anos e curso Informática no Grau Técnico. Gosto de tirar ideias do papel, experimentar tecnologias e entender como cada detalhe pode deixar um produto digital mais simples de usar.</p><p>Estou construindo minha experiência através de projetos próprios — sempre aprendendo algo novo no processo.</p><a class="text-link" href="#projetos">Conheça meus projetos <span>↘</span></a></div>
+      </div>
+      <div class="about-facts reveal">
+        <div><span>01 / FORMAÇÃO</span><strong>Informática <i>·</i> Grau Técnico</strong></div>
+        <div><span>02 / INTERESSES</span><strong>Web <i>·</i> Produtos digitais</strong></div>
+        <div><span>03 / PRÓXIMO PASSO</span><strong>Estágio em tecnologia <i>↗</i></strong></div>
       </div>
     </section>
 
-    <section class="availability reveal"><p>DISPONÍVEL PARA</p><h2>Estágios em TI<br><span>e novos desafios.</span></h2><a href="mailto:hugodevlopper@gmail.com">ENTRAR EM CONTATO ↗</a></section>
-
-    <section class="work" id="projetos">
-      <div class="work-heading reveal"><div><p class="eyebrow">02 / PROJETOS</p><h2>Trabalhos<br>selecionados.</h2></div><p>Projetos que desenvolvi para explorar interfaces, produtos e diferentes soluções para a web.</p></div>
+    <section class="work section-shell" id="projetos">
+      <div class="section-kicker reveal"><span>02</span><span>PROJETOS SELECIONADOS</span></div>
+      <div class="work-heading reveal"><div><p class="eyebrow">FEITOS COM CURIOSIDADE</p><h2>Do conceito<br>ao <span>clique.</span></h2></div><p>Uma seleção de projetos que desenvolvi para explorar interfaces, produtos e soluções para a web.</p></div>
       <div class="project-grid" id="project-grid" aria-live="polite"></div>
     </section>
 
-    <section class="skills">
-      <div class="skills-title reveal"><p class="eyebrow">03 / FERRAMENTAS</p><h2>O que uso para <em>construir.</em></h2></div>
-      <div class="skill-list reveal"><span>HTML</span><span>CSS</span><span>JAVASCRIPT</span><span>TYPESCRIPT</span><span>REACT</span><span>NEXT.JS</span><span>NODE.JS</span><span>TAILWIND CSS</span><span>C# / .NET</span><span>SUPABASE</span><span>GIT & GITHUB</span><span>GODOT</span></div>
+    <section class="skills section-shell" id="ferramentas">
+      <div class="section-kicker reveal"><span>03</span><span>FERRAMENTAS</span></div>
+      <div class="skills-layout">
+        <div class="skills-title reveal"><p class="eyebrow">CURIOSIDADE SEM FIM</p><h2>Aprendendo<br>uma ferramenta<br><span>de cada vez.</span></h2><p>Meu conjunto de ferramentas cresce junto com cada projeto.</p></div>
+        <div class="skill-cloud reveal" aria-label="Tecnologias e ferramentas"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>TypeScript</span><span>React</span><span>Next.js</span><span>Node.js</span><span>Tailwind CSS</span><span>C# / .NET</span><span>Supabase</span><span>Git & GitHub</span><span>Godot</span></div>
+      </div>
+      <div class="skills-foot reveal"><span>SEMPRE EM CONSTRUÇÃO</span><span>↗</span></div>
+    </section>
+
+    <section class="availability reveal">
+      <div class="availability-inner">
+        <div class="availability-symbol" aria-hidden="true">Ω</div>
+        <p class="eyebrow">NOVOS COMEÇOS</p>
+        <h2>Pronto para aprender<br><span>e somar ao time.</span></h2>
+        <a class="button button-dark" href="mailto:hugodevlopper@gmail.com">Fale comigo <span>↗</span></a>
+      </div>
     </section>
 
     <section class="contact" id="contato">
-      <p class="eyebrow reveal">04 / CONTATO</p>
-      <h2 class="reveal">Vamos conversar<br>sobre o seu <em>projeto.</em></h2>
-      <a class="email-link reveal" href="mailto:hugodevlopper@gmail.com">hugodevlopper@gmail.com <span>↗</span></a>
-      <p class="contact-note reveal">Disponível também para oportunidades de estágio em TI.</p>
+      <div class="contact-orbit" aria-hidden="true"><span></span><i></i></div>
+      <div class="section-kicker reveal"><span>04</span><span>CONTATO</span></div>
+      <div class="contact-content">
+        <p class="eyebrow reveal">TEM UMA IDEIA?</p>
+        <h2 class="reveal">Vamos dar<br><span>forma a ela.</span></h2>
+        <a class="email-link reveal" href="mailto:hugodevlopper@gmail.com">hugodevlopper@gmail.com <span>↗</span></a>
+        <p class="contact-note reveal">Disponível para oportunidades de estágio em TI e novos projetos.</p>
+      </div>
     </section>
   </main>
 
-  <footer><a class="brand" href="#inicio">HUGO<span>.</span></a><p>© 2026 HUGO. TODOS OS DIREITOS RESERVADOS.</p><a href="https://github.com/prodyug" target="_blank" rel="noreferrer">GITHUB ↗</a></footer>
+  <footer><a class="brand" href="#inicio" aria-label="Hugo, voltar ao início"><span class="brand-mark"><span>H</span></span><span>hugo<span class="brand-dot">.</span></span></a><p>© 2026 HUGO. FEITO COM CURIOSIDADE <i>✳</i></p><a class="footer-link" href="https://github.com/prodyug" target="_blank" rel="noreferrer">GITHUB <span>↗</span></a></footer>
   <script src="projects.js"></script>
   <script src="script.js"></script>
 </body>
